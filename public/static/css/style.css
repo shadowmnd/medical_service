@@ -1,6 +1,8 @@
 :root {
   font-family: Inter, sans-serif;
   font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 @supports (font-variation-settings: normal) {
   :root { font-family: InterVariable, sans-serif; }
@@ -50,6 +52,7 @@ body {
   margin: 0px;
   color: #fff;
 }
+
 .navbar {
 
 }
@@ -141,7 +144,25 @@ body {
   box-shadow: 10px 40px 50px 0px #E5E9F666;
   border-radius: 20px;
 } 
-
+.services-cards div:hover {
+ cursor: pointer;
+ background-color: #20202211;
+} 
+.services-card span {
+  display: block;
+  text-align: center;
+  font-size: 24;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #000;
+  
+}
+.services-card p {
+  font-size: 16px;
+  line-height: 28px;
+  color: #747477;
+}
 .services-button-wrapper {
   display: flex;
   justify-content: center;
