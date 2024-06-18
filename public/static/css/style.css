@@ -1,12 +1,15 @@
+
+@import url(‘https://fonts.googleapis.com/css?family=VK+Sans:400,700’);
+
+
 :root {
-  font-family: Inter, sans-serif;
-  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+  font-family: «VK Sans», sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  
 }
-@supports (font-variation-settings: normal) {
-  :root { font-family: InterVariable, sans-serif; }
-}
+
 .title {
   font-size: 48px;
   line-height: 56px;
@@ -22,35 +25,56 @@
 
 
 }
+.block-row {
+  display: flex;
+  gap: 110px;
+}
+.block-title{
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 700;
+  color: #3C567B;
+  margin-bottom: 50px;
+  
+}
 .container {
   width: 1200px;
   margin: auto;
 }
 .common-button {
-  height: 56px;
-  color: #458FF6;
+  height: 48px;
+  color: #07f;
   padding: 0 50px;
-  border-radius: 55px;
+  border-radius: 15px;
   background-color: transparent;
   cursor: pointer;
   font-size: 18px;
   font-weight: 700;
   border: 1px solid #458FF6;
-}
-header {
-  padding-top: 96px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 8px;
+  
+}
+
+
+header {
+  padding-top: 15px;
   position: sticky;
   top: -60px;
   background-color: #fff;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 body {
   padding: 0px;
   margin: 0px;
-  color: #fff;
+  color: #f7f7f7;
 }
 
 .navbar {
@@ -71,13 +95,15 @@ body {
 }
 
 .menu-item {
+  
   list-style-type: none;
   width: 80px;
+  
 }
 
 .menu-item a{
   font-size: 18px;
-  color: #747477;
+  color: #222222;
   text-decoration: none;
 
   transition: all 0.5ms;
@@ -108,7 +134,7 @@ body {
 }
 
 .main-discription p {
-  color: #000; 
+  color: #66727f; 
   font-size: 19px;
   font-weight: 500;
   line-height: 27px;
@@ -167,21 +193,60 @@ body {
   display: flex;
   justify-content: center;
 }
-.services-button-wrapper .common-button{
-  width: 284px;
-}
 
 .roadmap {
+  padding-top: 104px;
+  padding-bottom: 168px;
+  display: grid;
+  grid-template-rows: repeat(2,1fr);
+  gap: 224px;
+}
 
+
+.roadmap-description {
+  flex: 1px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+  
+}
+
+.roadmap-description p {
+  color: #66727f;
+  vertical-align: baseline;
+  margin-bottom: 40px;
+}
+.roadmap-row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.roadmap-button-wrapper {
+  display: flex;
+  justify-content: left;
 }
 .contacts {
+  background-color: #F3FBFF;
+  padding-top: 220px;
+  padding-bottom: 250px;
 
+  color: #f7f7f7;
+  height: 400px;
+  color: #000;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.contacts-description p {
+  color: #66727f;
+  vertical-align: baseline;
+  margin-bottom: 40px;
 }
 
 footer {
-  color: #fff;
+  color: #666565;
   height: 400px;
-  background: linear-gradient(183.41deg, #6888C8 -8.57%, #5A98F2 82.96%);
+  background: #1a1c20;
 
 }
 .footer-content{
@@ -218,11 +283,15 @@ footer {
   list-style-type: none;
 }
 .footer-menu-item a {
-  color: #fff; 
+  color: #444343; 
   text-decoration: none;
   font-size: 18px;
   line-height: 38px;
   font-weight: 100;
+}
+.footer-menu-item a:hover {
+  color: #838282; 
+  
 }
 .footer-navigation-title {
   display: inline-block;
